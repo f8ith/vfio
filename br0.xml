@@ -1,0 +1,24 @@
+<network>
+  <name>br0</name>
+  <forward mode="nat"/>
+  <domain name="br0"/>
+  <ip address="192.168.100.1" netmask="255.255.255.0">
+    <dhcp>
+      <range start="192.168.100.128" end="192.168.100.254"/>
+    </dhcp>
+  </ip>
+</network>
+<network>
+  <name>br0</name>
+  <uuid>016a9b34-b245-4aa8-8da2-463e5ef9bf1a</uuid>
+  <forward mode="nat"/>
+  <bridge name="virbr1" stp="on" delay="0"/>
+  <mac address="52:54:00:46:f3:2c"/>
+  <domain name="br0"/>
+  <ip address="192.168.100.1" netmask="255.255.255.0">
+    <dhcp>
+      <range start="192.168.100.128" end="192.168.100.254"/>
+    </dhcp>
+  </ip>
+</network>
+
